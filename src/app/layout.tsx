@@ -28,6 +28,11 @@ export const metadata: Metadata = {
     "exhibition",
     "PERSIS",
   ],
+  icons: {
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
+  },
+  manifest: "/manifest.json",
   openGraph: {
     title: "PERSIS Photography | Community for Photographers",
     description:
