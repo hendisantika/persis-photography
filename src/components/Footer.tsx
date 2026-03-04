@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -7,20 +8,14 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <Link href="#home" className="flex items-center gap-3 mb-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-accent">
-                <span className="font-serif text-lg font-bold text-accent">
-                  P
-                </span>
-              </div>
-              <div className="flex flex-col">
-                <span className="font-serif text-xl font-bold tracking-wide text-foreground">
-                  PERSIS
-                </span>
-                <span className="text-[10px] uppercase tracking-[0.3em] text-accent">
-                  Photography
-                </span>
-              </div>
+            <Link href="#home" className="flex items-center mb-4">
+              <Image
+                src="/PERSIS-PHOTOGRAPHY.jpg"
+                alt="PERSIS Photography Logo"
+                width={48}
+                height={48}
+                className="rounded-full"
+              />
             </Link>
             <p className="text-sm text-muted leading-relaxed max-w-xs">
               A passionate community of photographers in PERSIS, united by

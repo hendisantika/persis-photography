@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 
 const navLinks = [
@@ -35,20 +36,14 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <Link href="#home" className="flex items-center gap-3 group">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-accent group-hover:bg-accent transition-colors duration-300">
-              <span className="font-serif text-lg font-bold text-accent group-hover:text-background transition-colors duration-300">
-                P
-              </span>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-serif text-xl font-bold tracking-wide text-foreground">
-                PERSIS
-              </span>
-              <span className="text-[10px] uppercase tracking-[0.3em] text-accent">
-                Photography
-              </span>
-            </div>
+          <Link href="#home" className="flex items-center group">
+            <Image
+              src="/PERSIS-PHOTOGRAPHY.jpg"
+              alt="PERSIS Photography Logo"
+              width={48}
+              height={48}
+              className="rounded-full"
+            />
           </Link>
 
           {/* Desktop Navigation */}
