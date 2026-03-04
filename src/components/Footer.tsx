@@ -66,7 +66,9 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/persisphotography"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-border text-muted hover:border-accent hover:text-accent transition-all duration-300"
                 aria-label="Facebook"
               >
